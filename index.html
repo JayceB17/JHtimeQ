@@ -1,27 +1,54 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" conten="width=device-width, initial-scale=1.0"/>
-        <meta http-equiv="X-UA-Conpatible" content="ie=edge" />
-        <title>Coding Quiz</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Quiz</title>
 
-        <link rel="stylesheet" href="stylee.css" />
-    </head>
-
-    <body>
-        <div class="scores"><a href="highscores.html">View Highscores</a> </div>
-        <div class="timer">Time: <span id="time">0</span></div>
-        <div class="wrapper">
-            <div id="home" class="flex-center flex-column"></div>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+     
+</head>
+<body>
+    <!-- div for questions -->
+    <div class="card">
+        <div class="right">
             <div id="start-screen" class="start">
-                <h1>Coding Quiz Challenge</h1>
-                <p>
-                    Try to answer the next few coding questions within the time limit. 
-                    The incorrect answer will drop your score. 
-                </p>
-                <a class="btn" href="game.html">Start Quiz</a>
+                <h1>Coding Quiz!</h1>
+                <p>Answer the questions within the time limit!</p> 
+                
+                <!-- start button -->
+                <button id ="startBtn" class="start">Start</button>
+            </div>
+            <!-- anchor for quiz questions -->
+            <div id="questionAnchor" style="display:none">
+                <h1 id="questionTitle"></h1>
+                <!-- anchor for answer buttons -->
+                <div id="questionAnswers"></div>
+                         <div id="feedbackDiv" style="display:none">
+                    <p id="feedback"></p></div>
+                </div>
+                <!-- Timer div, and scores are anchored here -->
+                <div id="timer" class ="timersection hidden">
+                    <div class="timer"> <span id="timer"></span></div> 
+                    <div id="score" class="hidden"></div>     
+                </div>
+            <div>
+                <button id="reset" class="hidden">Start Over</button>
             </div>
         </div>
-    </body>
-</html>
+
+    </div>
+
+    <!-- high score card --> 
+    <div class="highscoreCard">
+        <div id="highscoreList">
+            <h1>Highscores</h1>
+        </div>
+        <div>
+            <!-- buttons for highscores and clear highscores, clearing local storage -->
+            <button id="seeHS">Highscores</button>
+            <button id="clearStorage">Clear Highscores</button>
+        </div>
+    </div>
+ <script src="./assets/js/script.js"></script>
+</body>
