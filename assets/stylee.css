@@ -25,13 +25,13 @@ html{
     border-radius: 5px;
     padding:5px;
     background-color: #087e8b;
-    color:	#f7f7ff;
+    color:	black;
     border-color: #0b3954;
     font-size: larger;
 }
 
 #questionAnchor{
-    color:#f7f7ff;
+    color:black;
     font-size: 12px;
     margin: 0 auto;
     max-width: 800px;
@@ -47,18 +47,14 @@ html{
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color:#f7f7ff;
-    border-radius: 10px;
-    border-width: 4px;
-    border-style: solid;
-    border-color: #041eb3;
+    color:black;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Times New Roman', serif;
     min-width: 50vh;
     min-height: 30vh;
 }
@@ -68,9 +64,9 @@ button{
     border-radius: 5px;
     font-size: medium;
     background-color: lightblue;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:Georgia, Times, serif;
     margin: 5px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, Times, serif;
 }
     button:hover{
         background-color: blue;
@@ -89,25 +85,5 @@ button{
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.highscoreCard {
-    position:absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color:#f7f7ff;
-    border-radius: 10px;
-    border-width: 4px;
-    border-style: solid;
-    border-color: #041eb3;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    min-width: 25vh;
-    min-height: 15vh;
+    font-family: Georgia, 'Times New Roman', serif;
 }
